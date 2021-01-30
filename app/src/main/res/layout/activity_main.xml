@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am a TextView" />
+
+<!--    4) Ajoutez le code nécessaire pour la saisie d’un texte-->
+       <EditText
+            android:id="@+id/editex"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="" />
+
+        <!-- Ajoutez le code nécessaire pour afficher le texte « Ma première application Android »
+et pour saisir un texte. -->
+        <Button
+            android:id="@+id/mainbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_label" />
+
+        <TextView android:id="@+id/textWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_text" />
+<!--Layout1: -->
+     <!--   <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 2" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 3"
+                    android:layout_weight="1"/>
+        </LinearLayout> -->
+
+        <!--Layout2-->
+     <!--   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button 1"/>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button3"
+                    android:layout_marginTop="65dp"
+                    android:text="Username :"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_toRightOf="@+id/button2"
+                    android:inputType="text" />
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/editText"
+                    android:text="Submit" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/button1"
+                    android:text="Button 3" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button1"
+                    android:layout_toRightOf="@+id/button1"
+                    android:text="Button 2" />
+        </RelativeLayout> -->
+
+        <!--layout 3 -->
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+        <!-- 2 columns -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+                <TextView
+                    android:id="@+id/textView1"
+                    android:text="Col 1"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <Button
+                    android:id="@+id/button1"
+                    android:text="Col 2" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_span="2"
+                    android:text="Col 1 et 2" />
+        </TableRow>
+        <!-- red line -->
+        <View
+            android:layout_height="4dip"
+            android:background="#FF00" />
+        <!-- 4 columns -->
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Col 1" />
+        <Button
+            android:id="@+id/button2"
+            android:text="Col 2" />
+        <Button
+            android:id="@+id/button3"
+            android:text="Col 3" />
+                <Button
+                    android:id="@+id/button5"
+                    android:text="Col 4" />
+        </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_column="2"
+                            android:text="Col 3" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip" >
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_column="1"
+                            android:text="Col 2" />
+                </TableRow>
+        </TableLayout>
+<!--Exercice 4 : Evènements utilisateurs-->
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <Button
+               android:id="@+id/mainbutton2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/mainbutton" />
+           <TextView
+               android:id="@+id/visibleTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""/>
+       </LinearLayout>
+    <!--Exercice 5 : Différentes vues et actions-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/linux_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linux_box" />
+        <CheckBox
+            android:id="@+id/macos_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/macos_box"
+            android:checked="true" />
+        <CheckBox
+            android:id="@+id/windows_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/windows_box" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display_label" />
+    </LinearLayout>
+</LinearLayout>

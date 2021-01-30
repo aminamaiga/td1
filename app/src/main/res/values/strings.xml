@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TD1_VUE_XML</string>
+    <string name="welcome_text">Ma première application Android</string>
+    <string name="button_label">Show message</string>
+    <string name="mainbutton">Click Button</string>
+    <string name="linux_box">Linux Box</string>
+    <string name="macos_box">Mac Box</string>
+    <string name="windows_box">Window box</string>
+    <string name="display_label">display Label</string>
+    <string name="visibleText">Exercice 4</string>
+</resources>
